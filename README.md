@@ -30,17 +30,19 @@ python src/inference.py --model_dir ./results --input_text "Once upon a time"
 ```
 
 ## Arguments for Training
---model_name: Pretrained model name (e.g., gpt2, llama, mistral)
---dataset_name: Dataset name (e.g., wikitext, glue)
---output_dir: Directory to save the results
---epochs: Number of training epochs
---batch_size: Batch size for training
---learning_rate: Learning rate
---optimization: Optimization method (lora, qlora, none)
+
+- model_name: Pretrained model name (e.g., gpt2, llama, mistral)
+- dataset_name: Dataset name (e.g., wikitext, glue)
+- output_dir: Directory to save the results
+- epochs: Number of training epochs
+- batch_size: Batch size for training
+- learning_rate: Learning rate
+- optimization: Optimization method (lora, qlora, none)
 
 ## Arguments for Inference
---model_dir: Directory of the fine-tuned model
---input_text: Input text for inference
+
+- model_dir: Directory of the fine-tuned model
+- input_text: Input text for inference
 
 ## Example
 
