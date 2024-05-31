@@ -3,20 +3,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments,
 import datasets
 from peft import get_peft_model, LoraConfig, TaskType  # Import necessary for LoRA
 
-# Placeholder function for QLORA - Replace with actual QLORA implementation
-def apply_qlora_optimization(model):
-    # Hypothetical QLORA configuration and application
-    # Customize this function according to the actual QLORA implementation
-    qlora_config = {
-        'param1': 'value1',
-        'param2': 'value2',
-        # Add all necessary QLORA configurations
-    }
-    # Apply QLORA optimization to the model
-    # This is a placeholder - Replace with actual QLORA application code
-    model = model  # Modify this line with actual QLORA optimization logic
-    return model
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine-Tune a Pretrained LLM")
     parser.add_argument('--model_name', type=str, required=True, help='Pretrained model name')
